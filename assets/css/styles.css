@@ -87,21 +87,28 @@ h3{
 	text-align: center;
 }
 
-.info p{
-	margin-top: 3vh;
+p{
 	font-family: 'regular';
 }
 
+.info p{
+	margin-top: 3vh;
+}
+
+
+
+
+
+/* Footer */
+
 
 footer{
-	height: 30vh;
 	background-color: #c0d1de;
-	font-size: 25px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 5vh 5vw;
 }
-
 
 
 
@@ -111,22 +118,20 @@ footer img{
 
 
 footer a{
+	font-size: 20px;
 	display: flex;
 	align-items: center;
-	width: fit-content;
 	text-decoration: underline;
 	font-family: 'regular';
 	text-decoration-color: rgb(232, 255, 248);
 }
 
 .scroll-logo{
-	display: flex;
-	justify-content: center;
-	width: 20vw;
+	width: 10vw;
 }
 
 .scroll-logo img{
-	width: 70%;
+	width: 100%;
 	border-radius: 50%;
 }
 
@@ -137,17 +142,19 @@ footer a{
 }
 
 .phone-contact{
-	width: 20vw;
+	width: 22vw;
 }
 
 .phone-contact div{
 	display: flex;
-	margin-top: 3vh;
+	align-items: center;
 }
 
 
 
-
+.phone-contact div:last-child{
+	margin-top: 5vh;
+}
 
 
 
@@ -162,10 +169,6 @@ footer a{
 
 	.top{
 		height: 30vh;
-	}
-
-	footer{
-		height: 25vh;
 	}
 }
 
@@ -182,24 +185,29 @@ footer a{
 
 
 
-@media screen and (max-width: 1281px) {
+/* tablet resolutions */
 
 
-	.phone-contact div{
-		display: flex;
-		margin-top: 2vh;
-	}
-}
-
-
-
-
-
-
-@media screen and (max-width: 963px) {
+@media screen and (max-width: 1200px) {
 
 	.top{
 		height: 30vh;
+	}
+
+	.scroll-logo{
+		display: none;
+		margin: none;
+	}
+
+	.web-contact{
+		width: 50vw;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.phone-contact{
+		width: 30vw;
+		font-size: 15px;
 	}
 
 }
@@ -253,6 +261,12 @@ footer a{
 		margin-top: 1vh;
 		font-size: 12px;
 	}
+
+	
+	.web-contact p{
+		font-size: 18px;
+	}
+
 }
 
 
@@ -264,7 +278,6 @@ footer a{
 	footer{
 		display: flex;
 		justify-content: space-between;
-		padding: 0 5vw;
 	}
 
 	.scroll-logo{
@@ -275,13 +288,11 @@ footer a{
 	.web-contact{
 		display: flex;
 		flex-direction: column;
-		width: 50%;
 		font-size: 15px;
 	}
 
 	.web-contact div{
-		width: 100%;
-		margin-top: 2vh;
+		margin-top: 3vh;
 	}
 
 	.web-contact img{
@@ -291,12 +302,11 @@ footer a{
 	.phone-contact{
 		font-size: 15px;
 		margin-left: 0;
-		width: 50%;
+		width: 50vw;
 	}
 
 	.phone-contact img{
 		width: 12%;
-		margin-left: auto;
 	}
 
 	.phone-contact div{
@@ -307,7 +317,12 @@ footer a{
 
 
 
-@media screen and (max-width: 450px) {
+
+/* phone resolutions */
+
+
+
+@media screen and (max-width: 500px) {
 
 	.top{
 		height: 50vh;
@@ -339,10 +354,42 @@ footer a{
 	.info p{
 		font-size: 10px;
 	}
+
+	.web-contact{
+		width: 30vw;
+	}
+
+	.web-contact a{
+		display: flex;
+		justify-content: center;
+		width: 25%;
+	}
+
+	.web-contact img{
+		width: 100%;
+	}
+
+	.web-contact div{
+		display: flex;
+		justify-content: center;
+		margin-top: 5vh;
+	}
+
+	.web-contact p{
+		display: none;
+	}
+
+	.phone-contact{
+		width: 60vw;
+	}
+
+	.phone-contact div{
+		margin-top: 5vh;
+	}
 }
 
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 365px) {
 	
 	.logo{
 		width: 90%;
@@ -359,5 +406,9 @@ footer a{
 	
 	.info p{
 		font-size: 8px;
+	}
+
+	.phone-contact p{
+		font-size: 12px;
 	}
 }
