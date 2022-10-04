@@ -121,9 +121,7 @@ footer a{
 	font-size: 20px;
 	display: flex;
 	align-items: center;
-	text-decoration: underline;
 	font-family: 'regular';
-	text-decoration-color: rgb(232, 255, 248);
 }
 
 .scroll-logo{
@@ -139,6 +137,10 @@ footer a{
 	display: flex;
 	justify-content: space-evenly;
 	width: 60vw;
+}
+
+.web-contact p{
+	margin-left: 5px;
 }
 
 .phone-contact{
