@@ -184,13 +184,6 @@ footer a{
 
 @media screen and (max-width: 1281px) {
 
-	.top{
-		height: 33vh;
-	}
-
-	footer{
-		height: 25vh;
-	}
 
 	.phone-contact div{
 		display: flex;
@@ -209,9 +202,6 @@ footer a{
 		height: 30vh;
 	}
 
-	footer{
-		height: 25vh;
-	}
 }
 
 
